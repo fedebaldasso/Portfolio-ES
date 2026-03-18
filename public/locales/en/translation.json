@@ -1,0 +1,89 @@
+{
+  "header": {
+    "home": "Home",
+    "about": "About",
+    "portfolio": "Portfolio",
+    "achievements": "Achievements",
+    "contact": "Contact"
+  },
+  "hero": {
+    "greeting": "I'm Federico Baldasso",
+    "developer": "Full Stack Developer."
+  },
+  "about": {
+    "title": "About Me",
+    "name_label": "Name:",
+    "profile_label": "Profile:",
+    "email_label": "Email:",
+    "phone_label": "Phone:",
+    "p1": "Technology enthusiast and passionate about solution development.",
+    "p2": "I am an Electronic Technician and I am currently working in the area of Web Programming and Data Analysis with the goal of continuous professional growth in the IT field.",
+    "p3": "My main interest is constant learning to be able to transform and optimize the various areas that require it."
+  },
+  "skills": {
+    "title": "Skills",
+    "subtitle": "Some of the skills I have acquired and continue to learn constantly."
+  },
+  "resume": {
+    "title": "Resume",
+    "academic": "Academic Background",
+    "complementary": "Complementary Training",
+    "experience": "Professional Experience",
+    "certificate": "View Certificate",
+    "current": "Present",
+    "exp1_title": "Software Developer",
+    "exp1_desc": "Development of integrations for internal management systems with Digital Citizen through BPM (Business Process Management).",
+    "exp2_title": "Software & Hardware Developer",
+    "exp2_desc1": "Development of a temperature measurement system and data analysis for frost prevention in the agricultural sector.",
+    "exp2_desc2": "Arduino, Web Programming, Data Analysis.",
+    "exp3_title": "Biomedical Equipment Technician",
+    "exp3_desc": "Preventive and corrective maintenance of: Ventilators, Anesthesia machines, Defibrillators, Electrosurgical units, Multiparameter monitors, Electrocardiographs, Centrifuges, etc.",
+    "exp4_title": "Field Service Engineer",
+    "exp4_desc": "Maintenance of high-complexity medical equipment: MRI scanners, CT scanners, Mammographs, Ultrasounds, Densitometers, Dental panoramic, Hemodynamics, etc."
+  },
+  "portfolio": {
+    "title": "Portfolio",
+    "subtitle": "Projects carried out in the professional and training fields.",
+    "filter_all": "All",
+    "filter_web": "Web",
+    "filter_bpm": "BPM",
+    "filter_data": "Data"
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Leave me your message via WhatsApp (by clicking on the number), Email, or by filling out the Form, and I will contact you shortly.",
+    "address_label": "Location",
+    "address": "San Juan - Capital (5400)",
+    "phone_label": "Phone",
+    "email_label": "Email",
+    "form_name": "Name",
+    "form_surname": "Surname",
+    "form_email": "Email",
+    "form_subject": "Subject",
+    "form_message": "Write your message...",
+    "form_submit": "Send Message",
+    "form_sending": "Sending...",
+    "form_success": "Your message has been sent successfully. Thank you!"
+  },
+  "testimonials": {
+    "fergimenez": "Great professional and excellent person. I hope you have the opportunities to deploy your great potential."
+  },
+  "services": {
+    "title": "Services",
+    "subtitle": "Solutions I can provide to your project.",
+    "item1_title": "Full Stack Web Development",
+    "item1_desc": "Creation of modern, scalable and responsive web applications using React, Node.js and relational/NoSQL databases.",
+    "item2_title": "BPM Automation",
+    "item2_desc": "Design and implementation of business processes (Business Process Management) to optimize corporate workflows.",
+    "item3_title": "Data Analysis",
+    "item3_desc": "Data extraction, cleaning and visualization using Python and SQL to facilitate decision making."
+  },
+  "achievements": {
+    "title": "Achievements",
+    "subtitle": "Milestones and recognitions throughout my career.",
+    "item1_title": "Fishing License",
+    "item2_title": "Consumer Protection Complaint",
+    "item3_title": "RUPE Natural Person Registration",
+    "item4_title": "Eventual Payment Recipient Registration"
+  }
+}

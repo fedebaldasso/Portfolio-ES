@@ -1,0 +1,89 @@
+{
+  "header": {
+    "home": "Inicio",
+    "about": "Sobre mí",
+    "portfolio": "Portfolio",
+    "achievements": "Logros",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "greeting": "Soy Federico Baldasso",
+    "developer": "Desarrollador Full Stack."
+  },
+  "about": {
+    "title": "Sobre mí",
+    "name_label": "Nombre:",
+    "profile_label": "Perfil:",
+    "email_label": "Email:",
+    "phone_label": "Teléfono:",
+    "p1": "Apasionado de la tecnología y entusiasta por el desarrollo de soluciones.",
+    "p2": "Soy Técnico Electrónico y, actualmente, me encuentro trabajando en el área de la Programación Web y el Análisis de Datos con el objetivo de continuar creciendo profesionalmente en el campo IT.",
+    "p3": "Mi principal interés es el aprendizaje constante para poder transformar y optimizar los diversos ámbitos que lo requieran."
+  },
+  "skills": {
+    "title": "Habilidades",
+    "subtitle": "Algunas de las habilidades que he adquirido y continúo aprendiendo constantemente."
+  },
+  "resume": {
+    "title": "Trayectoria",
+    "academic": "Formación Académica",
+    "complementary": "Formación Complementaria",
+    "experience": "Experiencia Profesional",
+    "current": "Actualidad",
+    "certificate": "Ver Certificado",
+    "exp1_title": "Software Developer",
+    "exp1_desc": "Desarrollo de Integraciones para Sistemas Internos de Gestión con Ciudadano Digital mediante BPM (Business Process Management).",
+    "exp2_title": "Software & Hardware Developer",
+    "exp2_desc1": "Desarrollo de Sistema de Medición de Temperatura y Análisis de Datos para Prevención de Heladas en Sector Agrícola.",
+    "exp2_desc2": "Arduino, Programación Web, Data Analysis.",
+    "exp3_title": "Biomedical Equipment Technician",
+    "exp3_desc": "Mantenimiento Preventivo y Correctivo de: Respiradores, Mesas de Anestesia, Cardiodesfibriladores, Electrobisturíes, Monitores Multiparamétricos, Electrocardiógrafos, Centrífugas, etc.",
+    "exp4_title": "Field Service Engineer",
+    "exp4_desc": "Mantenimiento de Equipamiento Médico de Alta Complejidad: Resonadores Magnéticos, Tomógrafos, Mamógrafos, Ecógrafos, Densitómetros, Panorámico Dental, Hemodinamia, etc."
+  },
+  "portfolio": {
+    "title": "Portfolio",
+    "subtitle": "Proyectos realizados en el ámbito laboral y de formación.",
+    "filter_all": "Todo",
+    "filter_web": "Web",
+    "filter_bpm": "BPM",
+    "filter_data": "Datos"
+  },
+  "contact": {
+    "title": "Contacto",
+    "subtitle": "Dejame tu mensaje a través de Whatsapp (haciendo click en el número), Correo Electrónico o completando el Formulario, y me pondré en contacto a la brevedad.",
+    "address_label": "Ubicación",
+    "address": "San Juan - Capital (5400)",
+    "phone_label": "Teléfono",
+    "email_label": "Email",
+    "form_name": "Nombre",
+    "form_surname": "Apellido",
+    "form_email": "Email",
+    "form_subject": "Asunto",
+    "form_message": "Escribe tu mensaje...",
+    "form_submit": "Enviar Mensaje",
+    "form_sending": "Enviando...",
+    "form_success": "El mensaje se ha enviado con éxito. ¡Gracias!"
+  },
+  "testimonials": {
+    "fergimenez": "Gran profesional y excelente persona. Espero que tengas las oportunidades para desplegar tu gran potencial."
+  },
+  "services": {
+    "title": "Servicios",
+    "subtitle": "Soluciones que puedo aportar a tu proyecto.",
+    "item1_title": "Desarrollo Web Full Stack",
+    "item1_desc": "Creación de aplicaciones web modernas, escalables y responsivas utilizando React, Node.js y bases de datos relacionales/NoSQL.",
+    "item2_title": "Automatización BPM",
+    "item2_desc": "Diseño e implementación de procesos de negocio (Business Process Management) para optimizar el flujo de trabajo corporativo.",
+    "item3_title": "Análisis de Datos",
+    "item3_desc": "Extracción, limpieza y visualización de datos utilizando Python y SQL para facilitar la toma de decisiones."
+  },
+  "achievements": {
+    "title": "Logros",
+    "subtitle": "Hitos y reconocimientos destacados en mi carrera.",
+    "item1_title": "Permiso de Pesca",
+    "item2_title": "Denuncia Defensa al Consumidor",
+    "item3_title": "Inscripción RUPE Persona Humana",
+    "item4_title": "Inscripción Destinatario de Pagos Eventuales"
+  }
+}

@@ -1,0 +1,443 @@
+/* Custom Overrides */
+
+/* Global Fixes */
+html, body {
+    overflow-x: clip;
+    width: 100%;
+}
+
+/* Default / Dark Mode Variables */
+:root {
+    --nav-hover-color: #64ffda;
+}
+
+/* Header Base Styles & Theme Toggle */
+.theme-toggle {
+    color: var(--nav-color);
+    transition: 0.3s;
+}
+.theme-toggle i {
+    transition: 0.3s;
+}
+
+/* Achievements Section Formatting */
+.achievement-item h4 {
+    color: #0a192f !important; /* Dark text for contrast against turquoise background */
+    font-weight: 700;
+}
+
+/* Portfolio Image Normalization */
+.portfolio-item img {
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 8px; /* Maintain the previous border radius from global styles if any */
+}
+
+/* Force Nav Active Styles in Default/Dark Mode */
+.navmenu a:hover,
+.navmenu .active,
+.navmenu .active:focus,
+.navmenu .theme-toggle:hover,
+.navmenu .theme-toggle:hover i {
+    color: var(--nav-hover-color) !important;
+}
+
+/* Header Base Styles (Fixing fixed-top lack of shadow) */
+.header {
+    background-color: #0a192f; /* Dark Mode base bg */
+    box-shadow: 0px 5px 25px rgba(100, 255, 218, 0.1); 
+    transition: all 0.3s ease-in-out;
+}
+
+/* Force Dropdown colors in Default/Dark Mode */
+.navmenu .dropdown-menu {
+    background: #020c1b !important;
+}
+.navmenu .dropdown-item {
+    color: #ccd6f6 !important;
+}
+.navmenu .dropdown-item:hover {
+    color: var(--nav-hover-color) !important;
+    background: rgba(100, 255, 218, 0.05) !important;
+}
+
+/* Light Theme Variables */
+:root.light-mode {
+    --background-color: #ffffff;
+    --default-color: #4a5568;
+    --heading-color: #2d3748;
+    --accent-color: #319795; /* Teal-500 equivalent */
+    --contrast-color: #e2e8f0;
+    --nav-color: #4a5568;
+    --nav-hover-color: #319795;
+    --alt-background-color: #f7fafc;
+}
+
+/* Light Mode Nav/Header Overrides */
+:root.light-mode .header {
+    --background-color: #ffffff;
+    background-color: #ffffff !important; /* Force override dark mode background */
+    box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.05) !important;
+}
+:root.light-mode .header .logo h1 {
+    color: #1a202c !important; /* Darker grey for strong contrast */
+}
+:root.light-mode .navmenu a,
+:root.light-mode .navmenu a:focus {
+    color: var(--nav-color);
+}
+:root.light-mode .navmenu a:hover,
+:root.light-mode .navmenu .active,
+:root.light-mode .navmenu .active:focus,
+:root.light-mode .navmenu .theme-toggle:hover,
+:root.light-mode .navmenu .theme-toggle:hover i {
+    color: var(--nav-hover-color) !important;
+}
+:root.light-mode .navmenu .dropdown-menu {
+    background: #ffffff !important;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1) !important;
+}
+:root.light-mode .navmenu .dropdown-item {
+    color: #000000 !important; /* Pure black text */
+}
+:root.light-mode .navmenu .dropdown-item:hover {
+    color: var(--nav-hover-color) !important;
+    background: #f7fafc !important;
+}
+:root.light-mode .mobile-nav-toggle {
+    color: var(--nav-color);
+}
+
+/* About Info Spans darker text in Light Mode */
+:root.light-mode .about-info span {
+    color: #1a202c !important;
+}
+
+/* Maintain specific styles for Testimonials & Footer inside Light Mode */
+:root.light-mode .testimonials {
+    --heading-color: #020c1b;
+    --default-color: #020c1b;
+    --background-color: #64ffda;
+}
+:root.light-mode .footer {
+    --background-color: #64ffda;
+    --default-color: #020c1b;
+    --heading-color: #020c1b;
+    background-color: var(--background-color) !important;
+}
+/* Ensure generic texts fallback to default if not explicitly using var */
+:root.light-mode .testimonials p, 
+:root.light-mode .testimonials span, 
+:root.light-mode .testimonials i {
+    color: var(--default-color) !important;
+}
+:root.light-mode .testimonials h3,
+:root.light-mode .testimonials h4 {
+    color: var(--heading-color) !important;
+}
+:root.light-mode .testimonials .stars i {
+    color: #ffc107 !important; /* Yellow stars */
+}
+:root.light-mode .testimonials .testimonial-img {
+    border-color: transparent !important;
+    box-shadow: none !important;
+}
+:root.light-mode .footer .copyright,
+:root.light-mode .footer .credits,
+:root.light-mode .footer a i {
+    color: var(--default-color) !important;
+}
+
+/* 1. Responsive Image in About Me */
+@media (max-width: 768px) {
+    #about #foto {
+        max-width: 60%;
+        margin: 0 auto;
+        display: block;
+    }
+}
+
+/* 2. Skills Layout Adjustment */
+@media (max-width: 768px) {
+    .contenedor {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .box1,
+    .box2,
+    .box3,
+    .box4 {
+        width: 100%;
+        height: auto;
+        justify-content: center;
+        /* Centered content */
+        padding-left: 0;
+        margin-bottom: 20px;
+        display: flex;
+    }
+
+    .box1 ul,
+    .box2 ul,
+    .box3 ul,
+    .box4 ul {
+        padding: 0;
+        margin: 0;
+    }
+
+    .box1 li,
+    .box2 li,
+    .box3 li,
+    .box4 li {
+        justify-content: flex-start;
+        margin-bottom: 15px;
+    }
+
+    .iconos-skills {
+        margin: 0 10px 0 0;
+    }
+}
+
+/* 3. Contact Button Text Color - Global */
+.contact .php-email-form button[type="submit"] {
+    color: #020c1b;
+    background: linear-gradient(130deg, #64ffda, #64ffda);
+    font-weight: bold;
+    border: none;
+}
+
+.contact .php-email-form button[type="submit"]:hover {
+    background: #3c9982;
+    color: #ccd6f6;
+}
+
+/* 5. Contact Form Input Focus Color (Text typed by user) */
+.contact .php-email-form input.form-control:focus,
+.contact .php-email-form textarea.form-control:focus {
+    color: var(--accent-color);
+    transition: 0.3s;
+}
+
+/* Make placeholder text always turquoise */
+.contact .php-email-form input.form-control::placeholder,
+.contact .php-email-form textarea.form-control::placeholder {
+    color: var(--accent-color) !important;
+    opacity: 1; /* Ensure uniform color rendering across browsers */
+}
+
+/* 6. Mobile Menu Customization */
+@media (max-width: 1199px) {
+    .mobile-nav-active .navmenu {
+        background: rgba(10, 25, 47, 0.95);
+    }
+
+    .navmenu ul {
+        background-color: transparent;
+        border: none;
+    }
+
+    .navmenu a,
+    .navmenu a:focus {
+        color: #ccd6f6;
+        font-family: "Calibre", "Inter", "San Francisco", "SF Pro Text", -apple-system, system-ui, sans-serif;
+        font-size: 18px;
+        justify-content: center;
+        border-bottom: 1px solid rgba(136, 146, 176, 0.1);
+    }
+
+    .navmenu a:hover,
+    .navmenu .active,
+    .navmenu .active:focus {
+        color: #64ffda;
+    }
+
+    .mobile-nav-toggle {
+        color: #64ffda;
+    }
+}
+
+/* 5. Global Cursor Pointer */
+a,
+button,
+.btn,
+.portfolio-filters li,
+.navmenu a,
+.mobile-nav-toggle {
+    cursor: pointer !important;
+}
+
+/* 6. Centered Success Message */
+.contact .php-email-form .sent-message {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    background: #059652;
+    color: #fff;
+    padding: 20px 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    font-size: 18px;
+    text-align: center;
+    width: auto;
+    max-width: 90%;
+    min-width: 300px;
+}
+
+/* 7. Scroll Offset for Fixed Header */
+section,
+#hero,
+#about,
+#skills,
+#portfolio,
+#contact {
+    scroll-margin-top: 90px;
+}
+
+/* 8. Logo Customization */
+.header {
+    padding: 0;
+}
+
+.header .logo img {
+    max-height: 100px;
+    margin-right: -10px;
+    /* Reduce spacing between logo and text */
+    filter: none;
+}
+
+#header .logo h1 {
+    font-size: 30px;
+    margin: 0;
+    font-weight: 700;
+    color: var(--heading-color);
+    font-family: var(--heading-font);
+}
+
+/* 9. Portfolio Images Curvature */
+.portfolio-item img {
+    border-radius: 10px;
+}
+
+/* 10. Hide Default Swiper SVG Arrows & Restore Original Shape */
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    font-family: swiper-icons;
+    font-size: 24px !important;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: transparent !important;
+    /* Hides the blue text/icon from newer Swiper default styles */
+    background: none !important;
+    /* Ensure no background on container */
+}
+
+/* Ensure the ::after content (which is the white arrow from main.css) is visible and correctly shaped */
+.portfolio-details .swiper-button-prev,
+.portfolio-details .swiper-button-next {
+    width: 48px !important;
+    height: 48px !important;
+    min-width: 48px !important;
+    min-height: 48px !important;
+    flex-shrink: 0 !important;
+    margin-top: -24px !important;
+    /* Center styling if needed */
+}
+
+.portfolio-details .swiper-button-prev:after,
+.portfolio-details .swiper-button-next:after {
+    color: rgba(255, 255, 255, 0.8) !important;
+    background-color: rgba(0, 0, 0, 0.15) !important;
+    border-radius: 50% !important;
+    width: 48px !important;
+    height: 48px !important;
+    min-width: 48px !important;
+    min-height: 48px !important;
+    flex-shrink: 0 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    box-sizing: border-box !important;
+}
+
+.portfolio-details .swiper-button-prev:hover:after,
+.portfolio-details .swiper-button-next:hover:after {
+    background-color: rgba(0, 0, 0, 0.3) !important;
+}
+
+/* Preloader Styles */
+.fb-preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--background-color, #0a192f);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999999;
+    transition: opacity 0.5s ease-out, visibility 0.5s ease-out;
+}
+
+.fb-logo {
+    font-family: "Calibre", "Inter", "San Francisco", "SF Pro Text", -apple-system, system-ui, sans-serif;
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--accent-color, #64ffda);
+    letter-spacing: 2px;
+    animation: pulseLogo 1.5s infinite alternate;
+}
+
+@keyframes pulseLogo {
+    0% {
+        transform: scale(0.95);
+        opacity: 0.7;
+        text-shadow: 0 0 0 rgba(100, 255, 218, 0);
+    }
+    100% {
+        transform: scale(1.05);
+        opacity: 1;
+        text-shadow: 0 0 20px rgba(100, 255, 218, 0.5);
+    }
+}
+
+/* 9. Modernized Scroll To Top Button */
+.scroll-top {
+    width: 45px;
+    height: 45px;
+    background: #319795 !important; /* Force light mode color */
+    border-radius: 50%;
+    box-shadow: 0 4px 15px rgba(49, 151, 149, 0.3) !important;
+    transition: all 0.3s ease-in-out;
+    bottom: 25px;
+    right: 25px;
+    z-index: 999;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+}
+
+.scroll-top i {
+    color: #ffffff !important;
+    font-size: 24px;
+    line-height: 0;
+}
+
+.scroll-top:hover {
+    background: #236e6d !important; /* Slightly darker hover */
+    box-shadow: 0 6px 20px rgba(49, 151, 149, 0.5) !important;
+    transform: translateY(-3px);
+}
+
+.scroll-top.active {
+    visibility: visible;
+    opacity: 1;
+}
