@@ -1,4 +1,22 @@
 export const projects = [
+  /*
+  {
+    id: 'blogmern',
+    title: 'Blog MERN',
+    bannerTitle: 'Blog Full Stack (MERN)',
+    descriptionTitle: 'Plataforma de Blog Completa',
+    category: 'Diseño Web',
+    img: '/assets/img/portfolio/placeholder_blog.png',
+    zoomImg: '/assets/img/portfolio/placeholder_blog.png',
+    client: 'Proyecto Personal',
+    date: 'Abril, 2024',
+    description: '<p>Desarrollo de un Blog interactivo utilizando el stack MERN (MongoDB, Express, React, Node.js). Incluye autenticación de usuarios y panel de administración.</p>',
+    technologies: ['MongoDB', 'Express', 'React', 'Node.js'],
+    sliderImages: [
+      '/assets/img/portfolio/placeholder_blog.png'
+    ]
+  },
+  */
   {
     id: 'aconcagua',
     title: 'Website Alojamiento',
@@ -66,7 +84,8 @@ export const projects = [
     client: 'Gobierno de San Juan',
     date: '2024',
     description: '<p>Automatización del trámite de Permiso de Pesca para la Secretaría de Estado de Ambiente y Desarrollo Sustentable.</p>',
-    sliderImages: ['/assets/img/permiso-pesca.png']
+    sliderImages: ['/assets/img/permiso-pesca.png'],
+    hideLink: true
   },
   {
     id: 'dashboard1',

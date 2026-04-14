@@ -15,7 +15,6 @@ const Achievements = () => {
         transition={{ duration: 0.6 }}
       >
         <h2>{t('achievements.title')}</h2>
-        <p>{t('achievements.subtitle')}</p>
       </motion.div>
 
       <div className="container">
@@ -30,7 +29,7 @@ const Achievements = () => {
           >
             <div className="p-4" style={{ background: 'var(--alt-background-color)', borderRadius: '8px' }}>
               <h4>{t('achievements.item1_title')}</h4>
-              {/* Content 1 */}
+              <p className="mt-2 text-dark lh-lg" dangerouslySetInnerHTML={{ __html: t('achievements.item1_desc') }} />
             </div>
           </motion.div>
 
@@ -44,7 +43,7 @@ const Achievements = () => {
           >
             <div className="p-4" style={{ background: 'var(--alt-background-color)', borderRadius: '8px' }}>
               <h4>{t('achievements.item2_title')}</h4>
-              {/* Content 2 */}
+              <p className="mt-2 text-dark lh-lg" dangerouslySetInnerHTML={{ __html: t('achievements.item2_desc') }} />
             </div>
           </motion.div>
 
@@ -58,7 +57,7 @@ const Achievements = () => {
           >
             <div className="p-4" style={{ background: 'var(--alt-background-color)', borderRadius: '8px' }}>
               <h4>{t('achievements.item3_title')}</h4>
-              {/* Content 3 */}
+              <p className="mt-2 text-dark lh-lg" dangerouslySetInnerHTML={{ __html: t('achievements.item3_desc') }} />
             </div>
           </motion.div>
 
@@ -72,7 +71,7 @@ const Achievements = () => {
           >
             <div className="p-4" style={{ background: 'var(--alt-background-color)', borderRadius: '8px' }}>
               <h4>{t('achievements.item4_title')}</h4>
-              {/* Content 4 */}
+              <p className="mt-2 text-dark lh-lg" dangerouslySetInnerHTML={{ __html: t('achievements.item4_desc') }} />
             </div>
           </motion.div>
         </div>

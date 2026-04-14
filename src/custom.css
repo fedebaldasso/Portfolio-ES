@@ -22,8 +22,25 @@ html, body {
 
 /* Achievements Section Formatting */
 .achievement-item h4 {
-    color: #0a192f !important; /* Dark text for contrast against turquoise background */
+    color: #b8860b !important; /* Dark Gold / Goldenrod */
     font-weight: 700;
+}
+
+/* Testimonial Quote Formatting */
+.testimonial-item p span {
+    font-size: 1.15rem;
+}
+
+/* Contact Form Input Text Color */
+.php-email-form input.form-control, 
+.php-email-form textarea.form-control {
+    color: #e0e0e0 !important; /* Lighter gray for typed text */
+}
+
+/* Base Buttons Hover Text Color Override */
+.contenedorr#cv button:hover,
+.php-email-form button[type="submit"]:hover {
+    color: #ffffff !important; /* Lighter/White text on hover */
 }
 
 /* Portfolio Image Normalization */
@@ -35,12 +52,16 @@ html, body {
 }
 
 /* Force Nav Active Styles in Default/Dark Mode */
-.navmenu a:hover,
 .navmenu .active,
-.navmenu .active:focus,
+.navmenu .active:focus {
+    color: var(--nav-hover-color) !important;
+}
+
+/* Nav Item Hover Style */
+.navmenu a:hover,
 .navmenu .theme-toggle:hover,
 .navmenu .theme-toggle:hover i {
-    color: var(--nav-hover-color) !important;
+    color: #cccccc !important; /* Light gray for hover to differentiate from active state */
 }
 
 /* Header Base Styles (Fixing fixed-top lack of shadow) */

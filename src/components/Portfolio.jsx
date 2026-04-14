@@ -8,8 +8,8 @@ import { useTranslation } from 'react-i18next';
 
 const Portfolio = () => {
     const { t } = useTranslation();
-    const [filter, setFilter] = useState('app');
-    const [filteredProjects, setFilteredProjects] = useState(projects.filter(project => project.category === 'Diseño Web'));
+    const [filter, setFilter] = useState('branding');
+    const [filteredProjects, setFilteredProjects] = useState(projects.filter(project => project.category === 'Automatización de Trámite'));
 
     useEffect(() => {
         if (filter === 'app') {
@@ -53,8 +53,8 @@ const Portfolio = () => {
             >
                 <div className="isotope-layout" data-aos="fade-up" data-aos-delay="100">
                     <ul className="portfolio-filters isotope-filters">
-                        <li className={filter === 'app' ? 'filter-active' : ''} onClick={() => handleFilter('app')}>{t('portfolio.filter_web')}</li>
                         <li className={filter === 'branding' ? 'filter-active' : ''} onClick={() => handleFilter('branding')}>{t('portfolio.filter_bpm')}</li>
+                        <li className={filter === 'app' ? 'filter-active' : ''} onClick={() => handleFilter('app')}>{t('portfolio.filter_web')}</li>
                         <li className={filter === 'product' ? 'filter-active' : ''} onClick={() => handleFilter('product')}>{t('portfolio.filter_data')}</li>
                     </ul>
 

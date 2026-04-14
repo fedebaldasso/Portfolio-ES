@@ -82,8 +82,12 @@
     "title": "Risultati",
     "subtitle": "Traguardi e riconoscimenti della mia carriera.",
     "item1_title": "Permesso di Pesca",
+    "item1_desc": "<strong>Questo servizio ha permesso a migliaia di abitanti di San Juan e turisti di accedere al permesso in modo facile e veloce. Inoltre, dalla sua implementazione, la Segreteria di Stato per l'Ambiente e lo Sviluppo Sostenibile ha potuto riscuotere più di 3,5 milioni di pesos. Questo significa un grande aumento nella riscossione generata dal nuovo permesso in formato digitale.</strong>",
     "item2_title": "Denuncia Difesa del Consumatore",
+    "item2_desc": "<strong>Con le denunce in formato digitale, la Direzione per la Tutela dei Consumatori ha ricevuto migliaia di reclami senza la necessità per i cittadini di presentarsi di persona, consentendo un risparmio di tempo e denaro.</strong>",
     "item3_title": "Iscrizione RUPE Persona Fisica",
-    "item4_title": "Iscrizione Destinatario di Pagamenti Eventuali"
+    "item3_desc": "<strong>La nuova registrazione digitale ha consentito l'inserimento di migliaia di registrazioni in modo facile e veloce, risparmiando ai cittadini l'incombenza di doversi recare al Centro Civico per completare la pratica.</strong>",
+    "item4_title": "Iscrizione Destinatario di Pagamenti Eventuali",
+    "item4_desc": "<strong>La Tesoreria Generale della Provincia di San Juan ha potuto ricevere migliaia di registrazioni grazie all'implementazione di questo nuovo servizio, offrendo un grande vantaggio ai cittadini permettendo loro di evitare di svolgere la pratica di persona.</strong>"
   }
 }
